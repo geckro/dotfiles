@@ -24,6 +24,9 @@ alias dl='cd ~/Downloads'
 alias c='clear'
 alias la='ls -A'
 alias ll='ls -AlF'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
 
 # git
 alias ga='git add -u'
@@ -31,10 +34,20 @@ alias gs='git status'
 alias gc='git commit -m'
 alias gp='git push'
 
+# easier to read
+alias df='df -h'
+alias free='free -m'
+
 # helpful commands
 alias rb='source ~/.bashrc'
 alias da='date  "+%A [%d/%m/%Y] [%Ih:%mm:%Ss] Week No. = %W | Timezone = %:z, %Z"'
 PS1='[\u@\h \W]\$ '
 
+# stupid shit
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+
 # Open terminal
 neofetch
+
+# Starship
+eval "$(starship init bash)"
