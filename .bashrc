@@ -46,6 +46,7 @@ alias free='free -m'
 alias rb='source ~/.bashrc'
 alias da='date  "+%A [%d/%m/%Y] [%Ih:%mm:%Ss] Week No. = %W | Timezone = %:z, %Z"'
 alias playmusic='mpv --shuffle ~/Music/*'
+alias dlmusic='yt-dlp -x -f bestaudio --no-playlist -o "~/Music/%(title)s.%(ext)s"'
 
 # stupid shit
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
