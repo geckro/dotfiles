@@ -5,27 +5,30 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR=nano
-export VISUAL=nano
-export TERM=alacritty
-export BROWSER=firefox
+export BROWSER=librewolf
+export TERM=konsole
+export VISUAL=code
+export EDITOR=code
 
-shopt -s autocd
-shopt -s cdspell
-shopt -s cmdhist
 
-# add color
+[[ "$(whoami)" = "root" ]] && return
+
+# add color to commands
 alias ls='ls --color=auto'
+alias la='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
+alias ip='ip -color=auto'
+alias diff='diff --color=auto'
 
-# file navigation
+# file nav
 alias ..='cd ..'
 alias dl='cd ~/Downloads'
 alias c='clear'
+alias cls='clear'
 alias la='ls -A'
 alias ll='ls -AlF'
 alias cp='cp -i'
@@ -38,27 +41,19 @@ alias gs='git status'
 alias gc='git commit -m'
 alias gp='git push'
 
-# easier to read
+# easier to read commands
 alias df='df -h'
 alias free='free -m'
 
-# helpful commands
+# reload bash
 alias rb='source ~/.bashrc'
+
+# helpful commands
 alias da='date  "+%A [%d/%m/%Y] [%Ih:%mm:%Ss] Week No. = %W | Timezone = %:z, %Z"'
-alias playmusic='mpv --shuffle ~/Music/*'
-alias dlmusic='yt-dlp -x -f bestaudio --no-playlist -o "~/Music/%(title)s.%(ext)s"'
-
-# stupid shit
-alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
-if [ -f /etc/bash.command-not-found ]; then
-    . /etc/bash.command-not-found
-fi
-
-# Open terminal
-neofetch
-
-# Starship
-eval "$(starship init bash)"
+alias playmusic='mpv --no-border --autofit=40%x50% --force-window --shuffle ~/Music/*'
+alias dlytmusic='yt-dlp -x -f bestaudio --no-playlist -o "~/Music/%(title)s.%(ext)s"'
+alias syu='sudo pacman -Syu'
+alias rns='sudo pacman -Rns'
 
 ex ()
 {
