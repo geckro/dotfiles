@@ -1,9 +1,9 @@
 # dotfiles
-my personal dotfiles for Arch Linux.
+my personal dotfiles for Linux.
 
 ## Programs
-OS = EndeavourOS  
-DE = KDE Plasma  
-Browser = Librewolf  
-Editor = VSCode or nano  
+OS = EndeavourOS   
+DE = GNOME  
+Browser = Firefox   
+Editor = VSCode or nano    
 Music/Video Player = mpv
