@@ -2,8 +2,10 @@
 my personal dotfiles for Linux.
 
 ## Programs
-OS = EndeavourOS   
-DE = GNOME  
-Browser = Firefox   
-Editor = VSCode or nano    
-Music/Video Player = mpv
+Operating Sys =   Arch Linux  
+Desktop       =   GNOME  
+Browser       =   Firefox  
+Editor (GUI)  =   VSCode  
+Editor (TUI)  =   nano  
+Music Player  =   Rhythmbox  
+Video Player  =   Celluloid  
