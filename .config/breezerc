@@ -1,0 +1,10 @@
+[Common]
+ShadowSize=ShadowSmall
+
+[Style]
+MenuOpacity=40
+WindowDragMode=WD_NONE
+
+[Windeco]
+ButtonSize=ButtonLarge
+DrawBorderOnMaximizedWindows=true

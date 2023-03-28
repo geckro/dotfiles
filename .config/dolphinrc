@@ -1,39 +1,35 @@
-MenuBar=Disabled
-
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
-[ContextMenu]
-ShowAddToPlaces=false
-ShowViewMode=false
+[CompactMode]
+PreviewSize=32
 
 [DetailsMode]
-PreviewSize=32
-UseShortRelativeDates=false
+PreviewSize=22
 
 [General]
+BrowseThroughArchives=true
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowSpaceInfo=false
 ShowZoomSlider=false
 Version=202
-ViewPropsTimestamp=2022,11,27,22,31,22.725
+ViewPropsTimestamp=2023,3,26,7,43,50.523
 
 [IconsMode]
-MaximumTextLines=2
 PreviewSize=48
 TextWidthIndex=0
-UseSystemFont=false
-ViewFont=JetBrains Mono,10,-1,5,50,0,0,0,0,0
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+Recent Files[$e]=.zshrc,file:$HOME/.zshrc
+Recent URLs[$e]=file:$HOME/,file:$HOME/Desktop/
+detailViewIconSize=16
 
 [KPropertiesDialog]
-DP-0 HDMI-2 Height 2560x1440 DP-0=490
-DP-0 HDMI-2 Width 2560x1440 DP-0=423
-DP-0 Height 2560x1440 DP-0=526
-DP-0 Width 2560x1440 DP-0=539
-HDMI-0 HDMI-2 Height 2560x1440 HDMI-0=490
-HDMI-0 HDMI-2 Width 2560x1440 HDMI-0=468
+2048x1152 screen: Height=443
+2048x1152 screen: Width=394
 
 [MainWindow]
 MenuBar=Disabled

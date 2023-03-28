@@ -1,2 +1,2 @@
 # dotfiles
-Don't use Linux anymore.
+OS: EndeavourOS

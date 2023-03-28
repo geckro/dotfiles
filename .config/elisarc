@@ -1,0 +1,15 @@
+[ElisaFileIndexer]
+RootPath[$e]=/run/media/geckro/Storage 1/Music
+
+[PlayerSettings]
+ShowSystemTrayIcon=true
+UseFavoriteStyleRatings=true
+
+[Playlist]
+AlwaysUseAbsolutePlaylistPaths=true
+
+[UiSettings]
+ColorScheme=
+
+[Views]
+InitialView=AllAlbums

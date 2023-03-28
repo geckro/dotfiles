@@ -5,77 +5,83 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export BROWSER=librewolf
-export TERM=konsole
-export VISUAL=code
-export EDITOR=code
+[[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
+_set_liveuser_PS1() {
+    PS1='[\u@\h \W]\$ '
+    if [ "$(whoami)" = "liveuser" ] ; then
+        local iso_version="$(grep ^VERSION= /usr/lib/endeavouros-release 2>/dev/null | cut -d '=' -f 2)"
+        if [ -n "$iso_version" ] ; then
+            local prefix="eos-"
+            local iso_info="$prefix$iso_version"
+            PS1="[\u@$iso_info \W]\$ "
+        fi
+    fi
+}
+_set_liveuser_PS1
+unset -f _set_liveuser_PS1
+
+ShowInstallerIsoInfo() {
+    local file=/usr/lib/endeavouros-release
+    if [ -r $file ] ; then
+        cat $file
+    else
+        echo "Sorry, installer ISO info is not available." >&2
+    fi
+}
+
+
+alias ls='ls --color=auto'
+alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
+alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 
 [[ "$(whoami)" = "root" ]] && return
 
-# add color to commands
-alias ls='ls --color=auto'
-alias la='ls -A --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias ip='ip -color=auto'
-alias diff='diff --color=auto'
+[[ -z "$FUNCNEST" ]] && export FUNCNEST=100          # limits recursive functions, see 'man bash'
 
-# file nav
-alias ..='cd ..'
-alias dl='cd ~/Downloads'
-alias c='clear'
-alias cls='clear'
-alias la='ls -A'
-alias ll='ls -AlF'
-alias cp='cp -i'
-alias mv='mv -i'
-alias rm='rm -i'
+## Use the up and down arrow keys for finding a command in history
+## (you can write some initial letters of the command first).
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
 
-# git
-alias ga='git add -u'
-alias gs='git status'
-alias gc='git commit -m'
-alias gp='git push'
+################################################################################
+## Some generally useful functions.
+## Consider uncommenting aliases below to start using these functions.
+##
+## October 2021: removed many obsolete functions. If you still need them, please look at
+## https://github.com/EndeavourOS-archive/EndeavourOS-archiso/raw/master/airootfs/etc/skel/.bashrc
 
-# easier to read commands
-alias df='df -h'
-alias free='free -m'
+_open_files_for_editing() {
+    # Open any given document file(s) for editing (or just viewing).
+    # Note1:
+    #    - Do not use for executable files!
+    # Note2:
+    #    - Uses 'mime' bindings, so you may need to use
+    #      e.g. a file manager to make proper file bindings.
 
-# reload bash
-alias rb='source ~/.bashrc'
+    if [ -x /usr/bin/exo-open ] ; then
+        echo "exo-open $@" >&2
+        setsid exo-open "$@" >& /dev/null
+        return
+    fi
+    if [ -x /usr/bin/xdg-open ] ; then
+        for file in "$@" ; do
+            echo "xdg-open $file" >&2
+            setsid xdg-open "$file" >& /dev/null
+        done
+        return
+    fi
 
-# helpful commands
-alias da='date  "+%A [%d/%m/%Y] [%Ih:%mm:%Ss] Week No. = %W | Timezone = %:z, %Z"'
-alias playmusic='mpv --no-border --autofit=40%x50% --force-window --shuffle ~/Music/*'
-alias dlytmusic='yt-dlp -x -f bestaudio --no-playlist -o "~/Music/%(title)s.%(ext)s"'
-alias syu='sudo pacman -Syu'
-alias rns='sudo pacman -Rns'
-
-ex ()
-{
-  if [ -f "$1" ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
+    echo "$FUNCNAME: package 'xdg-utils' or 'exo' is required." >&2
 }
+
+#------------------------------------------------------------
+
+## Aliases for the functions above.
+## Uncomment an alias if you want to use it.
+##
+
+# alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
+# alias pacdiff=eos-pacdiff
+################################################################################
+
