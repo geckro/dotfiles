@@ -2,8 +2,8 @@ alias cp="cp -v"
 
 # ZSH
 cp "$HOME/.zshrc" "$PWD/.zshrc"
-cp "$HOME/.config/zsh/aliases.zshrc" "$PWD/.config/zsh/aliases.zshrc"
-cp "$HOME/.config/zsh/envar.zshrc" "$PWD/.config/zsh/envar.zshrc"
+cp "$HOME/.config/zsh/aliases.zsh" "$PWD/.config/zsh/aliases.zsh"
+cp "$HOME/.config/zsh/envar.zsh" "$PWD/.config/zsh/envar.zsh"
 
 # BASH
 cp "$HOME/.bashrc" "$PWD/.bashrc"
