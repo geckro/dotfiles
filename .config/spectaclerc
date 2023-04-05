@@ -10,9 +10,11 @@ showCaptureInstructions=false
 useReleaseToCapture=true
 
 [GuiConfig]
-cropRegion=1680,1113,34,30
-window-position=50,47
+captureDelay=1
+captureMode=5
+cropRegion=134,110,1034,203
+includePointer=true
+window-position=179,313
 
 [Save]
-defaultSaveLocation=file:///home/geckro/Pictures/Screenshots
-lastSaveLocation=file:///home/geckro/Pictures/Screenshots/Screenshot_20230328_184034.png
+defaultSaveLocation=file:///home/geckro/Pictures/Spectacle

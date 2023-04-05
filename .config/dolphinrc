@@ -1,39 +1,50 @@
+MenuBar=Disabled
+
 [$Version]
 update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
 
 [CompactMode]
+MaximumTextWidthIndex=1
 PreviewSize=32
 
+[ContextMenu]
+ShowAddToPlaces=false
+ShowSortBy=false
+ShowViewMode=false
+
 [DetailsMode]
-PreviewSize=22
+DirectorySizeCount=false
+PreviewSize=32
+RecursiveDirectorySizeLimit=5
 
 [General]
+AutoExpandFolders=true
 BrowseThroughArchives=true
 ShowFullPath=true
-ShowFullPathInTitlebar=true
 ShowSpaceInfo=false
 ShowZoomSlider=false
 Version=202
-ViewPropsTimestamp=2023,3,26,7,43,50.523
+ViewPropsTimestamp=2023,4,2,21,16,1.032
 
 [IconsMode]
-PreviewSize=48
+PreviewSize=80
 TextWidthIndex=0
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
-Recent Files[$e]=.zshrc,file:$HOME/.zshrc
-Recent URLs[$e]=file:$HOME/,file:$HOME/Desktop/
-detailViewIconSize=16
 
 [KPropertiesDialog]
-2048x1152 screen: Height=443
-2048x1152 screen: Width=394
+2048x1152 screen: Height=439
+2048x1152 screen: Width=376
 
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mltpreview,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
+
+[ViewPropertiesDialog]
+2048x1152 screen: Height=565
+2048x1152 screen: Width=362

@@ -1,11 +1,5 @@
-#
 # ~/.bashrc
-#
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-[[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
 _set_liveuser_PS1() {
     PS1='[\u@\h \W]\$ '
@@ -84,33 +78,3 @@ _open_files_for_editing() {
 # alias ef='_open_files_for_editing'     # 'ef' opens given file(s) for editing
 # alias pacdiff=eos-pacdiff
 ################################################################################
-
-export BROWSER="firefox"
-
-alias ip="ip -color=auto"
-alias grep="grep --color=auto"
-alias egrep="egrep --colour=auto"
-alias fgrep='fgrep --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias diff="diff --color=auto"
-alias ls="ls --color=auto --human-readable --classify"
-alias la="ls -A"
-alias mv="mv -iv"
-alias cp="cp -iv"
-alias rm="rm -Iv"
-alias rmdir="rmdir -v"
-alias ln="ln -v"
-alias mkdir="mkdir -v"
-alias ..='cd ..'
-alias ...='cd ../..'
-alias dl='cd ~/Downloads'
-alias ms='cd ~/Music'
-alias vd='cd ~/Videos'
-alias dc='cd ~/Documents'
-alias dk="cd ~/Desktop"
-alias c="clear"
-alias cls="clear" # Windows variant
-alias open="xdg-open"
-alias df='df -h'
-alias free='free -m'

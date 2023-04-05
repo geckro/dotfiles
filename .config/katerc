@@ -1,37 +1,16 @@
 [General]
-Allow Tab Scrolling=true
-Auto Hide Tabs=false
-Close After Last=false
-Close documents with window=true
 Days Meta Infos=30
-Diff Show Style=0
-Elide Tab Text=false
-Expand Tabs=false
-Icon size for left and right sidebar buttons=32
-Modified Notification=false
-Mouse back button action=0
-Mouse forward button action=0
-Output History Limit=100
-Recent File List Entry Count=10
-Restore Window Configuration=true
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
-Show Symbol In Navigation Bar=true
 Show Tab Bar=true
-Show Tabs Close Button=true
 Show Url Nav Bar=true
-Show output view for message type=1
-Show text for left and right sidebar=false
-Show welcome view for new window=true
-Startup Session=manual
-Stash new unsaved files=true
-Stash unsaved file changes=false
-Sync section size with tab positions=false
-Tab Double Click New Document=true
-Tab Middle Click Close Document=true
-Tabbar Tab Limit=0
+
+[KFileDialog Settings]
+Recent Files[$e]=.zshrc,file:$HOME/.zshrc
+Recent URLs[$e]=file:$HOME/
+detailViewIconSize=16
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -79,9 +58,9 @@ Fallback Encoding=ISO 8859-15
 
 [KTextEditor Renderer]
 Animate Bracket Matching=false
-Auto Color Theme Selection=false
-Color Theme=Dracula
-Font=JetBrains Mono,10,-1,5,50,0,0,0,0,0
+Auto Color Theme Selection=true
+Color Theme=Breeze Light
+Font=Hack,10,-1,7,50,0,0,0,0,0
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
@@ -147,17 +126,12 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
-[Konsole]
-AutoSyncronize=true
-KonsoleEscKeyBehaviour=true
-KonsoleEscKeyExceptions=vi,vim,nvim,git
-RemoveExtension=false
-RunPrefix=
-SetEditor=false
-
 [MainWindow]
-2048x1152 screen: Height=1073
+2048x1152 screen: Height=1071
 2048x1152 screen: Width=1024
+2560x1440 screen: Height=480
+2560x1440 screen: Width=723
+2560x1440 screen: Window-Maximized=true
 
 [filetree]
 editShade=183,220,246
@@ -169,27 +143,5 @@ showToolbar=true
 sortRole=0
 viewShade=211,190,222
 
-[lspclient]
-AllowedServerCommandLines=
-AutoHover=true
-AutoImport=true
-BlockedServerCommandLines=
-CompletionDocumentation=true
-CompletionParens=true
-Diagnostics=true
-DiagnosticsHighlight=true
-DiagnosticsHover=true
-DiagnosticsMark=true
-DiagnosticsSize=1024
-HighlightGoto=true
-IncrementalSync=false
-Messages=true
-ReferencesDeclaration=true
-SemanticHighlighting=true
-ServerConfiguration=
-SignatureHelp=true
-SymbolDetails=false
-SymbolExpand=true
-SymbolSort=false
-SymbolTree=true
-TypeFormatting=false
+[kategit]
+lastExecutedGitCmds=git push origin main
