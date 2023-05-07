@@ -1,9 +1,12 @@
 [ElisaFileIndexer]
-RootPath[$e]=/run/media/geckro/Storage 1/Music
+RootPath[$e]=$HOME/Music,/run/media/geck/Storage 1/Music
 
 [PlayerSettings]
 ShowSystemTrayIcon=true
-UseFavoriteStyleRatings=true
 
 [UiSettings]
 ColorScheme=
+
+[Views]
+SortOrderPreferences=Track::==DescendingOrder,Album::==AscendingOrder
+SortRolePreferences=Album::==TitleRole

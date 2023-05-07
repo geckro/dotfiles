@@ -1,16 +1,38 @@
 [General]
+Allow Tab Scrolling=true
+Auto Hide Tabs=false
+Close After Last=false
+Close documents with window=true
 Days Meta Infos=30
+Diff Show Style=0
+Elide Tab Text=false
+Expand Tabs=false
+Icon size for left and right sidebar buttons=32
+Modified Notification=false
+Mouse back button action=0
+Mouse forward button action=0
+Output History Limit=100
+Recent File List Entry Count=10
+Restore Window Configuration=true
+SDI Mode=false
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
+Show Symbol In Navigation Bar=true
 Show Tab Bar=true
+Show Tabs Close Button=true
 Show Url Nav Bar=true
-
-[KFileDialog Settings]
-Recent Files[$e]=.zshrc,file:$HOME/.zshrc
-Recent URLs[$e]=file:$HOME/
-detailViewIconSize=16
+Show output view for message type=1
+Show text for left and right sidebar=false
+Show welcome view for new window=true
+Startup Session=manual
+Stash new unsaved files=true
+Stash unsaved file changes=false
+Sync section size with tab positions=false
+Tab Double Click New Document=true
+Tab Middle Click Close Document=true
+Tabbar Tab Limit=0
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -40,7 +62,7 @@ Overwrite Mode=false
 PageUp/PageDown Moves Cursor=false
 Remove Spaces=1
 ReplaceTabsDyn=true
-Show Spaces=0
+Show Spaces=1
 Show Tabs=true
 Smart Home=true
 Swap Directory=
@@ -48,7 +70,7 @@ Swap File Mode=1
 Swap Sync Interval=15
 Tab Handling=2
 Tab Width=4
-Trailing Marker Size=1
+Trailing Marker Size=2
 Word Wrap=false
 Word Wrap Column=80
 
@@ -57,13 +79,13 @@ Encoding Prober Type=1
 Fallback Encoding=ISO 8859-15
 
 [KTextEditor Renderer]
-Animate Bracket Matching=false
+Animate Bracket Matching=true
 Auto Color Theme Selection=true
 Color Theme=Breeze Light
-Font=Hack,10,-1,7,50,0,0,0,0,0
+Font=JetBrains Mono,10,-1,5,50,0,0,0,0,0
 Line Height Multiplier=1
-Show Indentation Lines=false
-Show Whole Bracket Expression=false
+Show Indentation Lines=true
+Show Whole Bracket Expression=true
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -108,14 +130,14 @@ Show Documentation With Completion=true
 Show File Encoding=true
 Show Focus Frame Around Editor=true
 Show Folding Icons On Hover Only=true
-Show Line Count=false
+Show Line Count=true
 Show Scrollbars=0
 Show Statusbar Dictionary=true
 Show Statusbar Highlighting Mode=true
 Show Statusbar Input Mode=true
 Show Statusbar Line Column=true
 Show Statusbar Tab Settings=true
-Show Word Count=false
+Show Word Count=true
 Smart Copy Cut=true
 Statusbar Line Column Compact Mode=true
 Text Drag And Drop=true
@@ -126,12 +148,21 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
+[KTextEditor::Search]
+Replace History=),;
+Search History=\sPort),\\,\s
+
+[Konsole]
+AutoSyncronize=true
+KonsoleEscKeyBehaviour=true
+KonsoleEscKeyExceptions=vi,vim,nvim,git
+RemoveExtension=false
+RunPrefix=
+SetEditor=false
+
 [MainWindow]
-2048x1152 screen: Height=1071
-2048x1152 screen: Width=1024
-2560x1440 screen: Height=480
-2560x1440 screen: Width=723
-2560x1440 screen: Window-Maximized=true
+2560x1440 screen: Height=1281
+2560x1440 screen: Width=1280
 
 [filetree]
 editShade=183,220,246
@@ -143,5 +174,25 @@ showToolbar=true
 sortRole=0
 viewShade=211,190,222
 
-[kategit]
-lastExecutedGitCmds=git push origin main
+[lspclient]
+AllowedServerCommandLines=
+AutoHover=true
+AutoImport=true
+BlockedServerCommandLines=
+CompletionDocumentation=true
+CompletionParens=true
+Diagnostics=true
+FormatOnSave=false
+HighlightGoto=true
+IncrementalSync=false
+InlayHints=false
+Messages=true
+ReferencesDeclaration=true
+SemanticHighlighting=true
+ServerConfiguration=
+SignatureHelp=true
+SymbolDetails=false
+SymbolExpand=true
+SymbolSort=false
+SymbolTree=true
+TypeFormatting=false

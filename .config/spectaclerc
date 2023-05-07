@@ -10,11 +10,7 @@ showCaptureInstructions=false
 useReleaseToCapture=true
 
 [GuiConfig]
-captureDelay=1
-captureMode=5
-cropRegion=134,110,1034,203
-includePointer=true
-window-position=179,313
+captureMode=0
 
 [Save]
-defaultSaveLocation=file:///home/geckro/Pictures/Spectacle
+defaultSaveLocation=file:///home/geck/Pictures/Spectacle
