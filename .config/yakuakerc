@@ -1,0 +1,16 @@
+[Animation]
+Frames=20
+
+[Appearance]
+BackgroundColorOpacity=20
+HideSkinBorders=true
+Translucency=true
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+Height=30
+KeepOpen=false
+ShowTabBar=false
+Width=50

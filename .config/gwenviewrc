@@ -1,0 +1,37 @@
+2 screens: Height=1072
+2 screens: Width=1732
+2 screens: XPosition=1401
+2 screens: YPosition=836
+DP-0 HDMI-1=HDMI-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABsQAAAP2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+
+[$Version]
+update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
+
+[General]
+LastUsedVersion=210800
+
+[ImageView]
+AnimationMethod=DocumentView::GLAnimation
+MouseWheelBehavior=MouseWheelBehavior::Zoom
+
+[MainWindow]
+2 screens: Height=1072
+2 screens: Width=1732
+2 screens: XPosition=1401
+2 screens: YPosition=836
+DP-0 HDMI-1=HDMI-1
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAABsQAAAP2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Pictures/soggycat.jpg
+Name1[$e]=soggycat.jpg
+
+[SideBar]
+InformationSplitterSizes=213,242
+
+[StatusBar]
+IsVisible ViewMode=false

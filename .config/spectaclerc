@@ -1,0 +1,18 @@
+[$Version]
+update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
+
+[FileDialogSize]
+2 screens: Height=610
+2 screens: Width=951
+
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+onLaunchAction=DoNotTakeScreenshot
+rememberLastRectangularRegion=Never
+showCaptureInstructions=false
+useReleaseToCapture=true
+
+[Save]
+defaultSaveLocation=file:///home/geck/Pictures/Screenshots
+lastSaveLocation=file:///home/geck/Pictures/Screenshots/Screenshot_20231027_205521.png
