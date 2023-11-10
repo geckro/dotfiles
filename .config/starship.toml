@@ -1,0 +1,11 @@
+[username]
+style_user = "#53bdff"
+style_root = "#56b036"
+format = '[$user]($style) '
+show_always = true
+
+[directory]
+style = "#ee68e3"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "::/"
