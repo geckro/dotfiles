@@ -1,3 +1,44 @@
+#
+# title       : nanorc
+# contributors: geckronome
+# last updated: 2023-11-10
+#
+
+# Make Ctrl+Right and Ctrl+Delete stop at word ends instead of beginnings
+set afterends
+# Automatically indent a newly created line
+set autoindent
+# Constantly display cursor in the status bar
+set constantshow
+# Display scrollbar on the righthand side of the terminal
+set indicator
+# Display line numbers to the left
+set linenumbers
+# remember cursor position when you exit
+set positionlog
+# Set tab size to 4
+set tabsize 4
+# Tabs to spaces
+set tabstospaces
+# Snip whitespace at the end of lines when justifying or hard-wrapping
+set trimblanks
+# Highlight a region and delete with with backspace/delete
+set zap
+
+# Color interface elements
+set titlecolor bold,white
+set promptcolor lightwhite,grey
+set statuscolor bold,green
+set errorcolor bold,red
+set spotlightcolor black,lightyellow
+set selectedcolor lightwhite,magenta
+set stripecolor ,yellow
+set scrollercolor blue
+set numbercolor magenta
+set keycolor bold,yellow
+set functioncolor italic,cyan
+
+# Syntax highlighting
 include "/usr/share/nano/*.nanorc"
 include "/usr/share/nano/extra/*.nanorc"
 include "/usr/share/nano-syntax-highlighting/*.nanorc"

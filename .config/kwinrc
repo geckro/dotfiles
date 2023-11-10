@@ -1,47 +1,39 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
+[Compositing]
+LatencyPolicy=ExtremelyLow
+
 [Desktops]
-Id_1=215e88a5-734f-42a2-a036-5dcd41c3ced1
+Id_1=2ba98996-9ec1-4e5f-ab2b-d02b76597b43
 Number=1
 Rows=1
-
-[Effect-blur]
-NoiseStrength=2
-
-[Effect-kwin4_effect_scale]
-Duration=800
-InScale=0.4
-OutScale=0.1
-
-[Effect-kwin4_effect_translucency]
-Menus=91
-MoveResize=89
 
 [Effect-windowview]
 BorderActivateAll=9
 
-[ModifierOnlyShortcuts]
-Meta=org.kde.krunner,/App,,toggleDisplay
-
 [Plugins]
-kdesnapassistEnabled=false
+alwaysopenonactivescreenEnabled=false
+alwaysopenonfocusedscreenEnabled=true
+alwaysopenonprimaryscreenEnabled=false
 kwin4_effect_dimscreenEnabled=true
-kwin4_effect_translucencyEnabled=true
-sheetEnabled=true
+kwin4_effect_fadingpopupsEnabled=false
+kwin4_effect_fullscreenEnabled=false
+kwin4_effect_loginEnabled=false
+kwin4_effect_logoutEnabled=false
+kwin4_effect_maximizeEnabled=false
+kwin4_effect_scaleEnabled=false
+kwin4_effect_squashEnabled=false
+kwin4_effect_windowapertureEnabled=false
 slideEnabled=false
-slidebackEnabled=true
+slidingpopupsEnabled=false
 sticky-window-snappingEnabled=true
 
 [TabBox]
-HighlightWindows=false
-LayoutName=thumbnail_grid
+LayoutName=compact
 
 [Tiling]
 padding=4
-
-[Tiling][6618cf24-c353-51fa-ab5d-628f850d8cf5]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][a21642e2-7e2d-58ee-87cd-da4751d740c5]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -49,13 +41,18 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][ecb4d540-d4df-5ccd-bf63-c0cc136fdbca]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][f24e043e-1e66-5d2c-b42c-27b625a69ce4]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Windows]
-BorderSnapZone=30
-ElectricBorderCooldown=200
+BorderSnapZone=50
+DelayFocusInterval=100
+ElectricBorderCooldown=150
+ElectricBorderCornerRatio=0.15
 ElectricBorderDelay=50
-WindowSnapZone=30
+Placement=Centered
+WindowSnapZone=50
 
 [org.kde.kdecoration2]
-ButtonsOnLeft=M
+ButtonsOnLeft=
 ButtonsOnRight=IX
-ShowToolTips=false

@@ -1,9 +1,11 @@
 [$Version]
 update_info=spectacle_clipboard.upd:clipboard-settings-change,spectacle_rememberregion.upd:spectacle-migrate-rememberregion
 
-[FileDialogSize]
-2 screens: Height=610
-2 screens: Width=951
+[Annotations]
+annotationToolType=7
+freehandStrokeWidth=3
+textFont=Inter,18,-1,5,50,0,0,0,0,0
+textFontColor=239,59,62
 
 [General]
 autoSaveImage=true
@@ -13,6 +15,10 @@ rememberLastRectangularRegion=Never
 showCaptureInstructions=false
 useReleaseToCapture=true
 
+[GuiConfig]
+captureMode=0
+
 [Save]
 defaultSaveLocation=file:///home/geck/Pictures/Screenshots
-lastSaveLocation=file:///home/geck/Pictures/Screenshots/Screenshot_20231027_205521.png
+lastSaveLocation=file:///home/geck/Pictures/Screenshots/2023-11-10_13h-19m-12s.png
+saveFilenameFormat=%Y-%M-%D_%Hh-%mm-%Ss
