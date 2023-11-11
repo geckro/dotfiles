@@ -30,6 +30,10 @@ shopt -s checkwinsize
 # exports
 export EDITOR=nano
 export VISUAL=nano
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_ENABLE_HIGHDPI_SCALING=1
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
