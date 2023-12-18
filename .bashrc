@@ -1,15 +1,15 @@
 #
 # title: .bashrc
-# contrib: geckronome
-# update: 2023-11-11
+# update: 2023-12-18
 #
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# If user is root, don't do anything
 [[ "$(whoami)" = "root" ]] && return
 
-# limits recursive functions
+# limits recursive functions to 100
 [[ -z "$FUNCNEST" ]] && export FUNCNEST=100
 
 # Use the up and down arrow keys for finding a command in history
@@ -30,13 +30,15 @@ shopt -s checkwinsize
 # exports
 export EDITOR=nano
 export VISUAL=nano
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_ENABLE_HIGHDPI_SCALING=1
-export GDK_SCALE=2
-export GDK_DPI_SCALE=0.5
-export QT_QPA_PLATFORMTHEME=qt5ct
+export BROWSER=firefox
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+# Uncomment if using window manager
+#export QT_AUTO_SCREEN_SCALE_FACTOR=1
+#export QT_ENABLE_HIGHDPI_SCALING=1
+#export GDK_SCALE=2
+#export GDK_DPI_SCALE=0.5
+#export QT_QPA_PLATFORMTHEME=qt5ct
+
 HISTSIZE=1000
 HISTFILESIZE=2000
 

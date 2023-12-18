@@ -1,5 +1,6 @@
 #
-# ~/.zshrc
+# title: .zshrc
+# update: 2023-12-18
 #
 
 HISTFILE=~/.config/zsh/HISTFILE
@@ -37,42 +38,50 @@ bindkey '^[[1;5C' forward-word                                  #
 bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
-alias ....='cd ../../..' # go up three directories
-alias ...='cd ../..' # go up two directories
-alias ..='cd ..' # go up one directory
-alias c='clear' # shorten clear command
-alias cls='clear' # windows variant
-alias cp='cp -iv' # prompt for confirmation before copying files and add verbosity
-alias df='df -h' # display free disk space human readable
-alias diff='diff --color=auto' # add color to diff command
-alias dir='dir --color=auto' # add color to dir command
-alias dmesg='dmesg --color=auto' # add color to dmesg command
-alias du='du -h' # display disk usage human readable
-alias egrep='egrep --color=auto' # add color to egrep command
-alias fgrep='fgrep --color=auto' # add color to fgrep command
-alias free='free -h' # make human readable
-alias ga='git add' # shorten git add
-alias gb='git branch' # shorten git branch
-alias gc='git checkout' # shorten git checkout
-alias gcl='git clone' # shorten git clone
-alias gl='git log' # shorten git log
-alias gp='git push' # shorten git push
-alias gpl='git pull' # shorten git pull
-alias grep='grep --color=auto' # add color to grep command
-alias gs='git status' # shorten git status
-alias ip="ip --color=auto" # add color to ip command
-alias la='ls -A' # alias
-alias ln='ln -v' # make symlinks verbose
-alias ls='ls --color=auto --human-readable --classify' # add color to ls, make size human readable, append classification to file (Pictures > Pictures/)
-alias mkd='mkdir' # shorten
-alias mkdir='mkdir -pv' # create parent directories if they don't exist and add verbosity
-alias mv='mv -iv' # prompt for confirmation before moving files and add verbosity
-alias open="xdg-open" # alias
-alias rm='rm -iv' # prompt for confirmation before deleting files and add verbosity
-alias rmdir='rmdir -pv' # remove directory and ancestors and add verbosity
-alias syu='sudo pacman -Syu' # shorten pacman -Syu
-alias tree='tree -c' # add color to tree command
-alias vdir='vdir --color=auto'  # add color to vdir command
+# aliases
+## color
+alias diff='diff --color=auto'
+alias dir='dir --color=auto'
+alias dmesg='dmesg --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ip='ip --color=auto'
+alias ls='ls --color=auto -hF --group-directories-first' # h: make human readable f: append classifications
+alias tree='tree -c'
+alias vdir='vdir --color=auto'
+
+## directory navigation
+alias ...='cd ../..'
+alias ..='cd ..'
+alias cd..='cd ..'
+alias cp='cp -iv' # i: prompt v: verbose
+alias la='ls -A'
+alias ln='ln -v' # v: verbose
+alias mkdir='mkdir -pv' # p: create parents v: verbose
+alias mv='mv -iv'  # i: prompt v: verbose
+alias open='xdg-open'
+alias rm='rm -Iv'  # I: prompt for 3 v: verbose
+alias rmdir='rmdir -pv' # p: remove ancestors v: verbose
+
+## shorten commands
+alias c='clear'
+alias cls='clear' # windows
+alias dl='cd $HOME/Downloads'
+alias dc='cd $HOME/Documents'
+alias pc='cd $HOME/Pictures'
+alias vd='cd $HOME/Videos'
+alias de='cd $HOME/Desktop'
+alias conf='cd $HOME/.config'
+alias g='git'
+alias bashrc='$EDITOR $HOME/.bashrc'
+alias i3conf='$EDITOR $HOME/.config/i3/config'
+alias polybarconf='$EDITOR $HOME/.config/polybar/config.ini'
+## modify commands
+alias df='df -h' # h: human readable
+alias du='du -h' # h: human readable
+alias free='free -h' # h: human readable
+alias ping='ping -c 10' # c: ping 10 times
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -1,2 +1,4 @@
-*dpi: 144
-Xft.dpi: 144
+// Uncomment if WM
+
+// *dpi: 144
+// Xft.dpi: 144
