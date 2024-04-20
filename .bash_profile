@@ -1,9 +1,5 @@
-#
-# title: .bash_profile
-# update: 2023-12-18
-#
-
-# uncomment if using wm
+# shellcheck disable=SC2148
+# uncomment if using an Xorg window manager
 #if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
 #  exec startx
 #fi

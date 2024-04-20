@@ -1,9 +1,3 @@
-#
-# title       : nanorc
-# contributors: geckronome
-# last updated: 2023-11-10
-#
-
 # Make Ctrl+Right and Ctrl+Delete stop at word ends instead of beginnings
 set afterends
 # Automatically indent a newly created line
